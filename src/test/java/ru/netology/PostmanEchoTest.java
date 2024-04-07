@@ -8,7 +8,6 @@ import static org.hamcrest.Matchers.equalTo;
 public class PostmanEchoTest {
     @Test
     void shouldSendPost() {
-        // Given - When - Then
 // Предусловия
         given()
                 .baseUri("https://postman-echo.com")
@@ -19,7 +18,7 @@ public class PostmanEchoTest {
 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("some data") )
+                .body("data", equalTo("some data"))
         ;
     }
 }
